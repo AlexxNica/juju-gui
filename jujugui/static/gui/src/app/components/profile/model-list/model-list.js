@@ -174,10 +174,6 @@ class ProfileModelList extends React.Component {
             </a>),
           columnSize: 3
         }, {
-          content: `${model.numMachines} ${model.provider.toUpperCase()}/` +
-            model.region.toUpperCase(),
-          columnSize: 3
-        }, {
           content: (
             <div>
               <SvgIcon name={icons.get(profileUser.access)}
@@ -186,6 +182,10 @@ class ProfileModelList extends React.Component {
                 {username}
               </span>
             </div>),
+          columnSize: 3
+        }, {
+          content: `${model.numMachines} ${model.provider.toUpperCase()}/` +
+          model.region.toUpperCase(),
           columnSize: 3
         }, {
           content: (
@@ -221,10 +221,10 @@ class ProfileModelList extends React.Component {
             content: 'Name',
             columnSize: 3
           }, {
-            content: 'Machines, cloud/region',
+            content: 'Permissions/owner',
             columnSize: 3
           }, {
-            content: 'Permissions/owner',
+            content: 'Machines, cloud/region',
             columnSize: 3
           }, {
             content: 'Last accessed',
