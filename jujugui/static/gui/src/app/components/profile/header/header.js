@@ -21,38 +21,42 @@ class ProfileHeader extends React.Component {
   render() {
     return (
       <div className="profile-header twelve-col">
+        <div className="profile-header__close link"
+          onClick={this._handleClose.bind(this)}
+          role="button"
+          tabIndex="0">
+          <SvgIcon
+            name="close_16"
+            size="20" />
+        </div>
         <div className="inner-wrapper">
-          <div className="profile-header__close link"
-            onClick={this._handleClose.bind(this)}
-            role="button"
-            tabIndex="0">
-            <SvgIcon
-              name="close_16"
-              size="20" />
-          </div>
-
-
           <div className="profile-header__wrapper">
-            <div className="profile-header__two">
+            <div className="profile-header__left">
               <span className={
                 'profile-header__avatar profile-header__avatar--default'}>
                 <span className="profile-header__avatar-overlay"></span>
               </span>
             </div>
-            <div className="profile-header__ten">
+            <div className="profile-header__right">
               <h1 className="profile-header__username">
                 {this.props.username}
               </h1>
               <ul className="profile-header__userinfo">
-                <li className="profile-header__userinfo-item"><strong>User name</strong></li>
-                <li className="profile-header__userinfo-item">user.email@company.com</li>
+                <li className="profile-header__userinfo-item">
+                  <strong>Firstname surname</strong>
+                </li>
+                <li className="profile-header__userinfo-item">
+                  firstname.surname@company.com
+                </li>
                 <li className="profile-header__userinfo-item">Company Ltd</li>
               </ul>
-              <h3 className="profile-header__subheading">Jaas</h3>
-              <ul className="profile-header__userinfo">
-                <li className="profile-header__userinfo-item">Home</li>
-                <li className="profile-header__userinfo-item">About JAAS</li>
-              </ul>
+              <div className="profile-header__nav">
+                <h3 className="profile-header__subheading">Jaas</h3>
+                <ul className="profile-header__userinfo">
+                  <li className="profile-header__userinfo-item"><a href="/">Home</a></li>
+                  <li className="profile-header__userinfo-item"><a href="/">About JAAS</a></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>

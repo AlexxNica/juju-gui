@@ -2,10 +2,12 @@
   background-color: $white;
   padding-top: 30px;
   padding-bottom: 30px;
-  border-bottom: 1px solid $light-grey;
+  border-bottom: 1px solid $grey;
 
   &__close {
-    float: right;
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
   }
 
   &__avatar {
@@ -53,7 +55,7 @@
   }
 
   &__username {
-    $size: 45px;
+    $size: 32px;
     margin: 0;
     padding: 0;
     font-size: $size;
@@ -68,13 +70,13 @@
     }
   }
 
-  &__two {
-    width: calc(30% - 1rem);
+  &__left {
+    width: 120px;
     padding: 0 .5rem;
   }
 
-  &__ten {
-    width: 70%;
+  &__right {
+    width: calc(100% - (96px + 2rem));
   }
 
   &__subheading {
@@ -84,10 +86,20 @@
 
   &__userinfo {
     list-style: none;
-    margin: 1rem 0 2rem;
+    margin: 1rem 0;
   }
 
   &__userinfo-item {
     margin-bottom: .5rem;
+  }
+
+  &__nav {
+    @media (min-width: $breakpoint-medium) {
+      position: absolute;
+      top: 2rem;
+      right: 0;
+      border-left: 1px solid #ccc;
+      padding-left: 1rem;
+    }
   }
 }
