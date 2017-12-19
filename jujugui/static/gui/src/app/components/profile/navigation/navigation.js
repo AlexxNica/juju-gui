@@ -25,7 +25,7 @@ class ProfileNavigation extends React.Component {
     const links = [];
     this.props.sectionsMap.forEach((val, key) => {
       const classes = classNames(
-        'profile-navigation__list-item', {
+        'profile__navigation__list-item', {
           'is-active': this.props.activeSection === key
         });
       links.push(
@@ -39,7 +39,7 @@ class ProfileNavigation extends React.Component {
     });
 
     return (
-      <div className="profile-navigation">
+      <div className="profile__navigation">
         <ul>
           {links}
         </ul>

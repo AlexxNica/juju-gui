@@ -26,21 +26,21 @@ describe('Profile Navigation', function() {
     }).getRenderOutput();
     const list = output.props.children.props.children;
     const expected = (
-      <div className="profile-navigation">
+      <div className="profile__navigation">
         <ul>
-          <li className="profile-navigation__list-item"
+          <li className="profile__navigation__list-item"
             role="button" key='models' onClick={list[0].props.onClick}>
             Models
           </li>
-          <li className="profile-navigation__list-item"
+          <li className="profile__navigation__list-item"
             role="button" key='charms' onClick={list[1].props.onClick}>
             Charms
           </li>
-          <li className="profile-navigation__list-item is-active"
+          <li className="profile__navigation__list-item is-active"
             role="button" key='bundles' onClick={list[2].props.onClick}>
             Bundles
           </li>
-          <li className="profile-navigation__list-item" key='credentials'
+          <li className="profile__navigation__list-item" key='credentials'
             role="button"
             onClick={list[3].props.onClick}>
             Cloud Credentials
@@ -69,21 +69,21 @@ describe('Profile Navigation', function() {
     const output = renderer.getRenderOutput();
     const list = output.props.children.props.children;
     const expected = (
-      <div className="profile-navigation">
+      <div className="profile__navigation">
         <ul>
-          <li className="profile-navigation__list-item"
+          <li className="profile__navigation__list-item"
             role="button" key='models' onClick={list[0].props.onClick}>
             Models
           </li>
-          <li className="profile-navigation__list-item"
+          <li className="profile__navigation__list-item"
             role="button" key='charms' onClick={list[1].props.onClick}>
             Charms
           </li>
-          <li className="profile-navigation__list-item is-active"
+          <li className="profile__navigation__list-item is-active"
             role="button" key='bundles' onClick={list[2].props.onClick}>
             Bundles
           </li>
-          <li className="profile-navigation__list-item"
+          <li className="profile__navigation__list-item"
             role="button" key='credentials'
             onClick={list[3].props.onClick}>
             Cloud Credentials
@@ -100,21 +100,21 @@ describe('Profile Navigation', function() {
     const output2 = renderer.getRenderOutput();
     const list2 = output2.props.children.props.children;
     const expected2 = (
-      <div className="profile-navigation">
+      <div className="profile__navigation">
         <ul>
-          <li className="profile-navigation__list-item"
+          <li className="profile__navigation__list-item"
             role="button" key='models' onClick={list2[0].props.onClick}>
             Models
           </li>
-          <li className="profile-navigation__list-item is-active"
+          <li className="profile__navigation__list-item is-active"
             role="button" key='charms' onClick={list2[1].props.onClick}>
             Charms
           </li>
-          <li className="profile-navigation__list-item"
+          <li className="profile__navigation__list-item"
             role="button" key='bundles' onClick={list2[2].props.onClick}>
             Bundles
           </li>
-          <li className="profile-navigation__list-item"
+          <li className="profile__navigation__list-item"
             key='credentials' role="button"
             onClick={list2[3].props.onClick}>
             Cloud Credentials

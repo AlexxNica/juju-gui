@@ -30,13 +30,31 @@ class ProfileHeader extends React.Component {
               name="close_16"
               size="20" />
           </div>
-          <span className={
-            'profile-header__avatar profile-header__avatar--default'}>
-            <span className="profile-header__avatar-overlay"></span>
-          </span>
-          <h1 className="profile-header__username">
-            {this.props.username}
-          </h1>
+
+
+          <div className="profile-header__wrapper">
+            <div className="profile-header__two">
+              <span className={
+                'profile-header__avatar profile-header__avatar--default'}>
+                <span className="profile-header__avatar-overlay"></span>
+              </span>
+            </div>
+            <div className="profile-header__ten">
+              <h1 className="profile-header__username">
+                {this.props.username}
+              </h1>
+              <ul className="profile-header__userinfo">
+                <li className="profile-header__userinfo-item"><strong>User name</strong></li>
+                <li className="profile-header__userinfo-item">user.email@company.com</li>
+                <li className="profile-header__userinfo-item">Company Ltd</li>
+              </ul>
+              <h3 className="profile-header__subheading">Jaas</h3>
+              <ul className="profile-header__userinfo">
+                <li className="profile-header__userinfo-item">Home</li>
+                <li className="profile-header__userinfo-item">About JAAS</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>);
   }
