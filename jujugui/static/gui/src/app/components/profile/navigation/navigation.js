@@ -40,7 +40,7 @@ class ProfileNavigation extends React.Component {
 
     return (
       <div className="profile__navigation">
-        <ul>
+        <ul className="profile__navigation__inline-list">
           {links}
         </ul>
       </div>);
